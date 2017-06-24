@@ -2,9 +2,9 @@ var result = prompt( "Milkcocoa‚ÌAPPID‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" , "" );
 if(result){
 	console.log(" OK ‚ª‰Ÿ‚³‚ê‚½:" + result);
     var milkcocoa = new MilkCocoa(result+".mlkcca.com");
-    var ds = milkcocoa.dataStore('nefry');
-    ds.on('push', function(pushed) {
-        if(pushed.value.sw=='1'){        
+    var ds = milkcocoa.dataStore('esp8266');
+    ds.on('send', function(pushed) {
+        if(pushed.value.Room 9=='1'){        
            document.getElementById("cb").checked = true;
         }else if(pushed.value.sw=='0'){
             document.getElementById("cb").checked = false;
