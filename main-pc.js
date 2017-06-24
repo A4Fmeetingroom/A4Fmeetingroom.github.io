@@ -1,19 +1,18 @@
-window.onload = function(){
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="http://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
+<script>
+  // Milkcocoaに接続
+  var milkcocoa = new MilkCocoa('hotj38fxucb.mlkcca.com');
 
-  var image = document.getElementById('image');
 
-  // app_id, API_Key, API_Secretは自分のものに書き換えてください
-  var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
-  var ds = milkcocoa.dataStore('gravity');
-
-  ds.on('send', changeViewFromSentMode);
-
-  function changeViewFromSentMode(sent){
-    if(sent.value.mode === 'portrait'){
-      image.className = '';
-    }
-    if(sent.value.mode === 'landscape'){
-      image.className = 'is-landscape';
-    }
-  }
-};
+  // データストアを取得
+  var ds = milkcocoa.dataStore('esp8266');
+  ds.stream().next(function(err, msgs){
+    // データストアの最新メッセージ
+    var last_msg = msgs[msgs.length - 1];
+    // 例えばメッセージが{"Room 9": 1}みたいな形式とする
+    var temperature = last_msg.value.Room 9;
+    // spanに温度を表示
+    $('#val').text(val);
+  });
+</script>
