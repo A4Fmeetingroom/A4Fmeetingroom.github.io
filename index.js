@@ -8,7 +8,7 @@ if(result){
 
     var ds = milkcocoa.dataStore('esp8266');
     ds.on('send', function(sent) {
-    	console.log(sent.value);
+    	//console.log(sent.value);
     	/*
         if(pushed.value.Room 9=='1'){        
            document.getElementById("Room 9").checked = true;
