@@ -10,7 +10,7 @@ if(result){
     ds.on('send', function(sent) {
     	console.log(sent.value.Room 9);
     
-    };
+    });
     
 }else{
 	console.log(" CANCEL ‚ª‰Ÿ‚³‚ê‚½");
