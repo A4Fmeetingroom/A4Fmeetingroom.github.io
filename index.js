@@ -6,12 +6,15 @@ if(result){
 
 
     var ds = milkcocoa.dataStore('esp8266');
-    ds.on('send', function(pushed) {
+    ds.on('push', function(pushed) {
+    	/*
         if(pushed.value.Room 9=='1'){        
            document.getElementById("Room 9").checked = true;
         }else if(pushed.value.Room 9=='0'){
             document.getElementById("Room 9").checked = false;
         }
+        */
+         document.getElementById("Room 9").checked = true;
     });
 }else{
 	console.log(" CANCEL ‚ª‰Ÿ‚³‚ê‚½");
