@@ -6,7 +6,7 @@ if(result){
     ds.on('send', function(pushed) {
         if(pushed.value.Room 9=='1'){        
            document.getElementById("cb").checked = true;
-        }else if(pushed.value.sw=='0'){
+        }else if(pushed.value.Room 9=='0'){
             document.getElementById("cb").checked = false;
         }
     });
