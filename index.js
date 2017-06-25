@@ -9,9 +9,9 @@ if(result){
     
     ds.on('send', function(sent) {
     	console.log(sent.value);
-    	if(pushed.value.sw=='1'){        
+    	if(sent.value.Room 9=='1'){        
            document.getElementById("cb").checked = true;
-        }else if(pushed.value.sw=='0'){
+        }else if(sent.value.Room 9=='0'){
             document.getElementById("cb").checked = false;
         }
     
