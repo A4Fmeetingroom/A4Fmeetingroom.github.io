@@ -8,9 +8,9 @@ if(result){
     var ds = milkcocoa.dataStore('esp8266');
     ds.on('send', function(pushed) {
         if(pushed.value.Room 9=='1'){        
-           document.getElementById("cb").checked = true;
+           document.getElementById("Room 9").checked = true;
         }else if(pushed.value.Room 9=='0'){
-            document.getElementById("cb").checked = false;
+            document.getElementById("Room 9").checked = false;
         }
     });
 }else{
