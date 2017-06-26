@@ -26,7 +26,8 @@
 <script type="text/javascript">// <![CDATA[ 
 var milkcocoa = new MilkCocoa('hotj38fxucb.mlkcca.com');   // 「app_idを記入」を置き換えます 
 var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
-ds.stream().size(1).sort('desc').next(function(err, data){  // 1番新しいデータを1件取得 
+ds.stream().size(1).sort("MeetingRoomCheck").next(function(err, data){  // 1番新しいデータを1件取得 
+
   document.getElementById("Room 9").innerHTML = "会議室9の状況：" + data[0].value.Room 9 + " "; 
   document.getElementById("nama data").innerHTML = "生データフラグ回数：" + data[0].value.nama data + "回"; 
   document.getElementById("LastUpdatedTime").innerHTML = "最終更新日：" + data[0].value.LastUpdatedTime + " "; 
