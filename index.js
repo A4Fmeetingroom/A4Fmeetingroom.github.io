@@ -17,9 +17,12 @@ function changeViewFromSentMode(sent){
 
     	console.log(sent.value);
     	
+    	var image = new Image();
+
     	if(sent.value.Room9=='1'){        
            document.getElementById("Room9").innerHTML = "会議室9：　使用中です　　最終更新日時：　" + sent.value.LastUpdatedTime; 
            //document.getElementById("Room9").innerHTML = "会議室9：　使用中です"; 
+           //image.src = "images/nanami.jpg";
         }else if(sent.value.Room9=='0'){
            document.getElementById("Room9").innerHTML = "会議室9：　空いています　　最終更新日時：　" + sent.value.LastUpdatedTime; 
            //document.getElementById("Room9").innerHTML = "会議室9：　空いています";
