@@ -1,12 +1,12 @@
-//window.onload = function(){
+ï»¿//window.onload = function(){
 	
-    //var result = prompt( "Milkcocoa‚ÌAPPID‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" , "" );
+    //var result = prompt( "Milkcocoaã®APPIDã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚" , "" );
    //if(result){	
-	//console.log(" OK ‚ª‰Ÿ‚³‚ê‚½:" + result);
+	//console.log(" OK ãŒæŠ¼ã•ã‚ŒãŸ:" + result);
     //var milkcocoa = new MilkCocoa(result+".mlkcca.com");
     //var milkcocoa = MilkCocoa.connectWithApiKey(result+".mlkcca.com", "EBMFKPMCMGLNAHNN", "VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP");
 var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
-var ds = milkcocoa.dataStore('esp8266');              // ƒf[ƒ^æ“¾æ‚Ìƒf[ƒ^ƒXƒgƒA 
+var ds = milkcocoa.dataStore('esp8266');              // ãƒ‡ãƒ¼ã‚¿å–å¾—å…ˆã®ãƒ‡ãƒ¼ã‚¿ã‚¹ãƒˆã‚¢ 
 	
 
 ds.on('send', changeViewFromSentMode);
@@ -18,16 +18,16 @@ function changeViewFromSentMode(sent){
     	console.log(sent.value);
     	
     	if(sent.value.Room9=='1'){        
-           document.getElementById("Room9").innerHTML = "‰ï‹cº9Fg—p’†‚Å‚·"; 
+           document.getElementById("Room9").innerHTML = "ä¼šè­°å®¤9ï¼šä½¿ç”¨ä¸­ã§ã™"; 
         }else if(sent.value.Room9=='0'){
-           document.getElementById("Room9").innerHTML = "‰ï‹cº9F‹ó‚¢‚Ä‚¢‚Ü‚·";            
+           document.getElementById("Room9").innerHTML = "ä¼šè­°å®¤9ï¼šç©ºã„ã¦ã„ã¾ã™";            
         }
            //document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
 }
- 
+  
     
 //}else{
-	//console.log(" CANCEL ‚ª‰Ÿ‚³‚ê‚½");
+	//console.log(" CANCEL ãŒæŠ¼ã•ã‚ŒãŸ");
 //}
 
 //};
