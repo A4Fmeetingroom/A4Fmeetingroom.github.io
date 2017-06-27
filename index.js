@@ -1,6 +1,7 @@
 window.onload = function(){
-//var result = prompt( "Milkcocoa‚ÌAPPID‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" , "" );
-//if(result){	
+	
+    //var result = prompt( "Milkcocoa‚ÌAPPID‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B" , "" );
+   //if(result){	
 	//console.log(" OK ‚ª‰Ÿ‚³‚ê‚½:" + result);
     //var milkcocoa = new MilkCocoa(result+".mlkcca.com");
     //var milkcocoa = MilkCocoa.connectWithApiKey(result+".mlkcca.com", "EBMFKPMCMGLNAHNN", "VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP");
@@ -14,15 +15,21 @@ var ds = milkcocoa.dataStore('esp8266');              // ƒf[ƒ^æ“¾æ‚Ìƒf[ƒ^ƒXƒ
 //}); 
 
 
-    ds.on('send', function(sent) {
+ds.on('send', changeViewFromSentMode);
+	console.log(sent.value);
+	
+function changeViewFromSentMode(sent){
+
+    //ds.on('send', function(sent) {
     	console.log(sent.value);
-    	//if(sent.value.Room9=='1'){        
+    	if(sent.value.Room9=='1'){        
            //document.getElementById("cb").checked = true;
            document.getElementById("Room9").innerHTML = "‰ï‹cº9‚Ìó‹µF" + sent.value.Room9 + "999999"; 
-        //}else if(sent.value.Room 9=='0'){
+        }else if(sent.value.Room 9=='0'){
+           document.getElementById("Room9").innerHTML = "‰ï‹cº9‚Ìó‹µF" + sent.value.Room9 + "999999"; 
             //document.getElementById("cb").checked = false;
-        //}
-    }
+        }
+}
  
     
 //}else{
