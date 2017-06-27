@@ -1,4 +1,6 @@
-//window.onload = function(){
+// UTF-8 BOM無しで保存して下さい。そうしないと日本語が文字化けします。
+
+window.onload = function () {
 	
     //var result = prompt( "MilkcocoaのAPPIDを入力してください。" , "" );
    //if(result){	
@@ -28,4 +30,4 @@ function changeViewFromSentMode(sent){
 	//console.log(" CANCEL が押された");
 //}
 
-//};
+};

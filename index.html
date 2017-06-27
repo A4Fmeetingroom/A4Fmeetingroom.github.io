@@ -1,8 +1,10 @@
+<!-- UTF-8 BOM無しで保存して下さい。そうしないと日本語が文字化けします。 -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<title>A棟4F　会議室空き状況　リアルタイムIoT</title>
+<title>A棟4F　会議室4～9　リアルタイム空き状況チェック　IoT実験</title>
 <meta name="Description" content="" />
 <meta name="Keywords"  content="" />
 
@@ -12,19 +14,21 @@
 <body>
 <!-- Licensed under MIT License - http://www.opensource.org/licenses/mit-license.php -->
 
-<h2>A4F　会議室4～9　リアルタイム空き状況チェック</h2>
+<h1>A棟4F　会議室4～9　リアルタイム空き状況チェック</h1>
 <BR>
-<p>取得中の場合、最大30秒お待ち下さい。それでも更新されない場合、機器が壊れてます。 </p>
+<p>30秒ごとに更新されます。更新されない場合、機器が壊れているので管理者にご連絡下さい。 </p>
 <BR>
 <BR>
 <!--<div id="LastUpdatedTime">更新時刻　取得中 (最大30秒お待ち下さい) ......</div>     <!-- 置き換え用の場所 -->
 <h3>
-<div id="Room4">会議室4：　取得中 .....</div>
-<div id="Room5">会議室5：　取得中 .....</div>
-<div id="Room6">会議室6：　取得中 .....</div>
-<div id="Room7">会議室7：　取得中 .....</div>
-<div id="Room8">会議室8：　取得中 .....</div>
-<div id="Room9">会議室9：　取得中 .....</div>
+<span id="Room4">会議室4：　取得中 ...</span>
+<BR>
+<div id="Room5">会議室5：　取得中 ...</div>
+<div id="Room6">会議室6：　取得中 ...</div>
+<div id="Room7">会議室7：　取得中 ...</div>
+<div id="Room8">会議室8：　取得中 ...</div>
+<BR>
+<span id="Room9">会議室9：　取得中 ...</span>
  
 </h3>
 
