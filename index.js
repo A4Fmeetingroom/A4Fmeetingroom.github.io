@@ -10,19 +10,19 @@ var ds = milkcocoa.dataStore('esp8266');              // ƒf[ƒ^æ“¾æ‚Ìƒf[ƒ^ƒXƒ
 	
 
 ds.on('send', changeViewFromSentMode);
-	console.log(sent.value);
+	//console.log(sent.value);
 	
 function changeViewFromSentMode(sent){
 
     //ds.on('send', function(sent) {
     	console.log(sent.value);
+    	
     	if(sent.value.Room9=='1'){        
-           //document.getElementById("cb").checked = true;
-           document.getElementById("Room9").innerHTML = "‰ï‹cº9‚Ìó‹µF" + sent.value.Room9 + "999999"; 
+           document.getElementById("Room9").innerHTML = "‰ï‹cº9Fg—p’†‚Å‚·"; 
         }else if(sent.value.Room9=='0'){
-           document.getElementById("Room9").innerHTML = "‰ï‹cº9‚Ìó‹µF" + sent.value.Room9 + "999999"; 
-            //document.getElementById("cb").checked = false;
+           document.getElementById("Room9").innerHTML = "‰ï‹cº9F‹ó‚¢‚Ä‚¢‚Ü‚·";            
         }
+           document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
 }
  
     
