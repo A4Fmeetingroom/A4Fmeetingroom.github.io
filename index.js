@@ -10,19 +10,17 @@ var ds = milkcocoa.dataStore('esp8266');              // データ取得先の�
 	
 
 ds.on('send', changeViewFromSentMode);
-	//console.log(sent.value);
 	
 function changeViewFromSentMode(sent){
 
-    //ds.on('send', function(sent) {
     	console.log(sent.value);
     	
     	if(sent.value.Room9=='1'){        
-           document.getElementById("Room9").innerHTML = "会議室9：使用中です"; 
+           document.getElementById("Room9").innerHTML = "会議室9：　使用中です　　最終更新日時：　" + sent.value.LastUpdatedtime; 
         }else if(sent.value.Room9=='0'){
-           document.getElementById("Room9").innerHTML = "会議室9：空いています";            
+           document.getElementById("Room9").innerHTML = "会議室9：　空いています　最終更新日時：　" + sent.value.LastUpdatedtime;            
         }
-           document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
+           //document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
 }
    
     
