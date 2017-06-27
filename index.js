@@ -29,7 +29,7 @@ function changeViewFromSentMode(sent){
         }
            //document.getElementById("LastUpdatedtime").innerHTML = "最終更新日時：　" + sent.value.LastUpdatedTime; 
 }
-   
+    
     
 //}else{
 	//console.log(" CANCEL が押された");
