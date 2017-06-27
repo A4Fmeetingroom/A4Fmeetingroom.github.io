@@ -22,7 +22,7 @@ function changeViewFromSentMode(sent){
         }else if(sent.value.Room9=='0'){
            document.getElementById("Room9").innerHTML = "会議室9：空いています";            
         }
-           //document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
+           document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
 }
    
     
