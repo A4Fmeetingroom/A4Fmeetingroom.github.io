@@ -24,7 +24,9 @@
 <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script> 
 
 <script type="text/javascript">// <![CDATA[ 
-var milkcocoa = new MilkCocoa('hotj38fxucb.mlkcca.com');   // 「app_idを記入」を置き換えます 
+//var milkcocoa = new MilkCocoa('hotj38fxucb.mlkcca.com');   // 「app_idを記入」を置き換えます 
+var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
+  
 var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
 ds.stream().size(1).sort("MeetingRoomCheck").next(function(err, data){  // 1番新しいデータを1件取得 
 
