@@ -1,4 +1,4 @@
-﻿//window.onload = function(){
+//window.onload = function(){
 	
     //var result = prompt( "MilkcocoaのAPPIDを入力してください。" , "" );
    //if(result){	
@@ -24,7 +24,7 @@ function changeViewFromSentMode(sent){
         }
            //document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
 }
-  
+   
     
 //}else{
 	//console.log(" CANCEL が押された");
