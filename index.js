@@ -18,16 +18,13 @@ function changeViewFromSentMode(sent){
     	console.log(sent.value);
     	
     	if(sent.value.Room9=='1'){        
-           //document.getElementById("Room9").innerHTML = "会議室9：　使用中です　　最終更新日時：　" + sent.value.LastUpdatedTime; 
-           document.getElementById("Room9").innerHTML = "会議室9：　使用中です";            
-           document.getElementById("LastUpdatedTime").innerHTML = "最終更新日時：　" + sent.value.LastUpdatedTime;            
-
+           document.getElementById("Room9").innerHTML = "会議室9：　使用中です　　最終更新日時：　" + sent.value.LastUpdatedTime; 
+           //document.getElementById("Room9").innerHTML = "会議室9：　使用中です"; 
         }else if(sent.value.Room9=='0'){
-           document.getElementById("Room9").innerHTML = "会議室9：　空いています";            
-           document.getElementById("LastUpdatedTime").innerHTML = "最終更新日時：　" + sent.value.LastUpdatedTime;            
-
+           document.getElementById("Room9").innerHTML = "会議室9：　空いています　　最終更新日時：　" + sent.value.LastUpdatedTime; 
+           //document.getElementById("Room9").innerHTML = "会議室9：　空いています";
         }
-           //document.getElementById("LastUpdatedtime").innerHTML = sent.value.LastUpdatedtime; 
+           //document.getElementById("LastUpdatedtime").innerHTML = "最終更新日時：　" + sent.value.LastUpdatedTime; 
 }
    
     
