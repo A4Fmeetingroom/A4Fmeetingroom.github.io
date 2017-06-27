@@ -18,29 +18,11 @@
 
 <div>会議室9の空き状況　1は使用中、0は空き</div>
 <div id="LastUpdatedTime">更新時刻　取得中...</div>     <!-- 置き換え用の場所 -->
-<div id="Room 9">空き状況　取得中...</div>  <!-- 置き換え用の場所 -->
+<div id="Room9">空き状況　取得中...</div>  <!-- 置き換え用の場所 -->
 <div id="nama data">人感センサ反応回数　生データ取得中...</div>     <!-- 置き換え用の場所 -->
   
 <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script> 
-
-<script type="text/javascript">// <![CDATA[ 
-//var milkcocoa = new MilkCocoa('hotj38fxucb.mlkcca.com');   // 「app_idを記入」を置き換えます 
-var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
-  
-var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
-ds.stream().size(1).sort("MeetingRoomCheck").next(function(err, data){  // 1番新しいデータを1件取得 
-
-  document.getElementById("Room 9").innerHTML = "会議室9の状況：" + data[0].value.Room 9 + "999999"; 
-  document.getElementById("nama data").innerHTML = "生データフラグ回数：" + data[0].value.nama data + "回"; 
-  document.getElementById("LastUpdatedTime").innerHTML = "最終更新日：" + data[0].value.LastUpdatedTime + " "; 
-}); 
-// ]]></script>
-  
-
-
-<!-- <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>　-->
-
-<!-- <script type="text/javascript" src="index.js"></script>　-->
+<script type="text/javascript" src="index.js"></script>
   
 </body>
 </html>
