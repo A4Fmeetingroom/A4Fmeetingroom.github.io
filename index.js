@@ -32,12 +32,14 @@ function changeViewFromSentMode(sent){
            document.getElementById("Room9").innerHTML = "会議室9：　使用中です　　最終更新日時：　" + sent.value.LastUpdatedTime; 
            //document.getElementById("Room9").innerHTML = "会議室9：　使用中です"; 
            //image.src = "images/nanami.jpg";
-	   document.getElementById("Room9").src=img[1].src;  //画像を切り替える
+	   //document.getElementById("Room9").src=img[1].src;  //画像を切り替える
+           document.Room9.src = img[1];
 		
         }else if(sent.value.Room9=='0'){
            document.getElementById("Room9").innerHTML = "会議室9：　空いています　　最終更新日時：　" + sent.value.LastUpdatedTime; 
            //document.getElementById("Room9").innerHTML = "会議室9：　空いています";
-	   document.getElementById("Room9").src=img[0].src;  //画像を切り替える
+	   //document.getElementById("Room9").src=img[0].src;  //画像を切り替える
+	   document.Room9.src = img[0];
         }
            //document.getElementById("LastUpdatedtime").innerHTML = "最終更新日時：　" + sent.value.LastUpdatedTime; 
 	
