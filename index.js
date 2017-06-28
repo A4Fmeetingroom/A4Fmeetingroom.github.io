@@ -13,12 +13,12 @@ var ds = milkcocoa.dataStore('esp8266');              // データ取得先の�
 //画像を配列に格納する
 var img = new Array();
 
-img[0] = new Image();
-img[0].src = "images/free.png";
-img[1] = new Image();
-img[1].src = "images/busy.png";
+//img[0] = new Image();
+//img[0].src = "images/free.png";
+//img[1] = new Image();
+//img[1].src = "images/busy.png";
 
-	
+img = new Array("images/free.png","images/busy.png");	
 	
 ds.on('send', changeViewFromSentMode);
 	
