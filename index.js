@@ -40,9 +40,10 @@ function changeViewFromSentMode(sent){
 	   document.getElementById("Room9").src=img[0].src;  //画像を切り替える
         }
            //document.getElementById("LastUpdatedtime").innerHTML = "最終更新日時：　" + sent.value.LastUpdatedTime; 
+	
 }
     
-    
+    document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
 //}else{
 	//console.log(" CANCEL が押された");
 //}
