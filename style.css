@@ -20,6 +20,11 @@ html, body {
   font-family: sans-serif;
 }
 
+p.gazou img {
+    height: 140px;
+    width: auto;
+}
+
 ul, li {
   list-style: none;
   margin: 0;
