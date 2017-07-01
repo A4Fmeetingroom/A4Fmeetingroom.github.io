@@ -17,7 +17,8 @@ html, body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: sans-serif;
+  
+  font-family: "Meiryo UI",sans-serif;
 }
 
 p.gazou img {
