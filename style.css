@@ -39,13 +39,13 @@ h1 {
 	border-bottom: 1px solid #ccc;
 }
 
-h2 {
+h3 {
   /* color: #222;font-size: 12pt; */
   padding: .25em 0 .25em .75em;
 	border-left: 6px solid #ccc;
 }
 
-h3 { 
+h4 { 
   padding: .5em .75em;
 	background-color: #f6f6f6;
 	border-top: 1px solid #ccc;
