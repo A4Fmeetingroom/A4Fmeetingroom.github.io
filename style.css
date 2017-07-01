@@ -23,7 +23,7 @@ html, body {
 p.gazou img {
     height: 35px;
     width: auto;
-    margin : 3px ;
+    margin : 0px ;
 }
 
 table.sample5{border:1px  black solid;}
