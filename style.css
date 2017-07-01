@@ -22,36 +22,19 @@ html, body {
 
 p.gazou img {
     height: 35px;
-    width: auto;    
+    width: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
-
-td {background-color: #ccc; height: 10px;}
-
-p.time9 {font-size: 10pt;color: #777;}
-
-
-ul, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+p {
+  margin: 0px;padding: 0px;
 }
 
-.tg-list {
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+/* td {background-color: #ccc; height: 10px;} */
 
-.tg-list-item {
-  margin: 0 2em;
-}
+/* p.time9 {font-size: 10pt;color: #777;} */
+
 
 h2 {
   color: #777;
