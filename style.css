@@ -41,8 +41,9 @@ h1 {
 
 h3 {
   /* color: #222;font-size: 12pt; */
-  padding: .25em 0 .25em .75em;
-	border-left: 6px solid #ccc;
+  background-color: #f6f6f6;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 h4 { 
