@@ -22,7 +22,7 @@ html, body {
 
 p.gazou img {
     height: 35px;width: auto;
-    margin: 20px 0px 0px 2px; padding: 0px;
+    margin: 10px 0px 0px 2px; padding: 0px;
 }
 
 p {margin: 0px;padding: 0px;}
@@ -30,8 +30,7 @@ p {margin: 0px;padding: 0px;}
 
 
 h1 {
-  /* color: #777;font-size: 16pt; */
-  padding: .25em 0 .5em .75em;
+    padding: .25em 0 .5em .75em;
 	border-left: 6px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
@@ -43,9 +42,5 @@ h3 {
 	border-bottom: 1px solid #ccc;
 }
 
-h4 { 
-  padding: .5em .75em;
-	background-color: #f6f6f6;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+h5 {  
 }
