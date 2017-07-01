@@ -21,15 +21,11 @@ html, body {
 }
 
 p.gazou img {
-    height: 35px;
-    width: auto;
-    margin: 0px;
-    padding: 0px;
+    height: 35px;width: auto;
+    margin: 0px;padding: 0px;
 }
 
-p {
-  margin: 0px;padding: 0px;
-}
+p {margin: 0px;padding: 0px;}
 
 /* td {background-color: #ccc; height: 10px;} */
 
@@ -39,6 +35,11 @@ p {
 h2 {
   color: #777;
 }
+
+h3 {
+  color: #777;font-size: 12pt;
+}
+
 
 h4 {
   color: #999;
