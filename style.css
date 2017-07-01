@@ -33,15 +33,10 @@ p {margin: 0px;padding: 0px;}
 
 
 h2 {
-  color: #777;
+  color: #777;font-size: 16pt;
 }
 
 h3 {
-  color: #777;font-size: 12pt;
-}
-
-
-h4 {
-  color: #999;
+  color: #222;font-size: 12pt;
 }
 
