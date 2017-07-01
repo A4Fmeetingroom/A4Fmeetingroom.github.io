@@ -30,6 +30,7 @@ p {margin: 0px;padding: 0px;}
 
 
 h1 {
+    font-size: 1.5em;
     padding: .5em .75em;
 	background-color: #f6f6f6;
 	border-top: 1px solid #ccc;
@@ -37,8 +38,8 @@ h1 {
 }
 
 h3 {
-  color: #333;font-size: 0.75em; 
-  background-color: #f6f6f6;
+  color: #333;font-size: 0.7em; 
+  /* background-color: #f6f6f6; */
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
