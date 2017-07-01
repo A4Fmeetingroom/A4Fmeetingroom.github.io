@@ -30,8 +30,9 @@ function changeViewFromSentMode(sent){
            //document.getElementById("Room9").innerHTML = "会議室9：　空いています";
 	   //document.getElementById("Room9").src=img[0].src;  //画像を切り替える
 	   document.Room9.src = img[0];
-	   var elem = document.getElementById("test");
-elem.innerText = "innerText";
+	   //var elem = document.getElementById("test");
+       //elem.innerText = "innerText";
+       document.getElementById("updatetime").innerHTML = sent.value.LastUpdatedTime; 
         }	
 }
     
