@@ -30,8 +30,9 @@ p {margin: 0px;padding: 0px;}
 
 
 h1 {
-    padding: .25em 0 .5em .75em;
-	border-left: 6px solid #ccc;
+    padding: .5em .75em;
+	background-color: #f6f6f6;
+	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
