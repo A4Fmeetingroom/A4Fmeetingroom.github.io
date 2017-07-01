@@ -25,9 +25,8 @@ p.gazou img {
     width: auto;    
 }
 
-tbody.table1 {margin: 3px; padding: 3px;}
 
-td {background-color: #ddd; margin: 3px; padding: 3px;}
+td {background-color: #ddd; height: 50px;}
 
 p.time9 {font-size: 10pt;color: #777;}
 
