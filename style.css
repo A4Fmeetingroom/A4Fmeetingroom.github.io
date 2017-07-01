@@ -34,7 +34,7 @@ p {margin: 0px;padding: 0px;}
 td {height: 48px;}
 
 h1 {
-    color: #ccc; font-size: 1.4em; 
+    color: #ddd; font-size: 1.4em; 
     padding: 0px .5em;	
 	/* border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc; */
@@ -48,5 +48,5 @@ h3 {
 }
 
 h4 {  
-    color: #ccc; font-size: 1em;
+    color: #ccc; font-size: 0.95em;
 }
