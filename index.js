@@ -14,24 +14,20 @@ img = new Array("images/free.png","images/busy.png");
 	
 ds.on('send', changeViewFromSentMode);
 	
+	
 function changeViewFromSentMode(sent){
-
     	//console.log(sent.value);    	
     	
     	if(sent.value.Room9=='1'){        
-           //document.getElementById("Room9").innerHTML = "会議室9：　使用中です　　最終更新日時：　" + sent.value.LastUpdatedTime; 
-           //document.getElementById("Room9").src=img[1].src;  //画像を切り替える
-           document.Room9.src = img[1];
-		
-        }else if(sent.value.Room9=='0'){
-           //document.getElementById("Room9").innerHTML = "会議室9：　空いています　　最終更新日時：　" + sent.value.LastUpdatedTime; 
-           //document.getElementById("Room9").src=img[0].src;  //画像を切り替える
-	       document.Room9.src = img[0];
-           document.getElementById("updatetime").innerHTML = sent.value.LastUpdatedTime; 
-        }	
+           document.room9.src = img[1];		
+        }else if(sent.value.Room9=='0'){           
+	       document.room9.src = img[0];
+        }
+           document.getElementById("time9").innerHTML = sent.value.LastUpdatedTime; 
+	
 }
     
-    document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
+   // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
 //}else{
 	//console.log(" CANCEL が押された");
 //}
