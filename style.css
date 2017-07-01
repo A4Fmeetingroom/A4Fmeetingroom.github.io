@@ -31,14 +31,14 @@ p.updatetime {
 p {margin: 0px;padding: 0px;}
 
 h1 {
-    color: #ccc; font-size: 1.2em; 
+    color: #ccc; font-size: 1.3em; 
     padding: .5em .75em;	
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
 h3 {
-    color: #ccc;font-size: 0.95em; 
+    color: #ccc;font-size: 1.0em; 
     /* background-color: #f6f6f6; */
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
