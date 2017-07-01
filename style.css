@@ -24,10 +24,11 @@ p.gazou img {
     height: 35px;width: auto;
     margin: 10px 0px 0px 2px; padding: 0px;
 }
+p.updatetime {
+  color: #333;font-size: 0.76em;
+}
 
 p {margin: 0px;padding: 0px;}
-
-
 
 h1 {
     font-size: 1.5em;
