@@ -26,9 +26,11 @@ p.gazou img {
     margin : 3px ;
 }
 
-td, th {
-padding: 10px 20px;
-}
+table.sample5{border:0px}
+td.cellyohaku{
+padding:3px;
+} 
+
 
 ul, li {
   list-style: none;
