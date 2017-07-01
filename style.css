@@ -31,6 +31,8 @@ p.updatetime {
 
 p {margin: 0px;padding: 0px;}
 
+td {height: 50px;}
+
 h1 {
     color: #ccc; font-size: 1.3em; 
     padding: .5em .75em;	
