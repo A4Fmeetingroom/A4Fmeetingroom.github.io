@@ -38,7 +38,8 @@ function changeViewFromSentMode(sent){
     	if(sent.value.Room6=='2'){
     	document.room6.src = img[1];
     	document.getElementById("time6").innerHTML = sent.value.LastTime6;
-        }else if(sent.value.Room6=='1'){
+        }else if(sent.value.Room6=='1')
+        {
         document.room6.src = img[0];
         document.getElementById("time6").innerHTML = sent.value.LastTime6;
         }
@@ -46,7 +47,7 @@ function changeViewFromSentMode(sent){
     	if(sent.value.Room7=='2'){
     	document.room7.src = img[1];
     	document.getElementById("time7").innerHTML = sent.value.LastTime7;
-        }else if(sent.value.Room7=='1){
+        }else if(sent.value.Room7=='1'){
         document.room7.src = img[0];
         document.getElementById("time7").innerHTML = sent.value.LastTime7;
         }
