@@ -52,7 +52,7 @@ function changeViewFromSentMode(sent){
         }
         // Room 8 --------------------------------------------------------------    	
     	if(sent.value.Room8=='1'){
-    	document.room7.src = img[1];
+    	document.room8.src = img[1];
     	document.getElementById("time8").innerHTML = sent.value.LastTime8;
         }else if(sent.value.Room8=='0'){
         document.room8.src = img[0];
