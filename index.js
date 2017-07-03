@@ -18,11 +18,54 @@ ds.on('send', changeViewFromSentMode);
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
     	
-    	if(sent.value.Room9=='1'){document.room9.src = img[1];
-        }else if(sent.value.Room9=='0'){ document.room9.src = img[0];
+    	// Room 4 --------------------------------------------------------------    	
+    	if(sent.value.Room4=='1'){
+    	document.room4.src = img[1];
+    	document.getElementById("time4").innerHTML = sent.value.LastTime4;
+        }else if(sent.value.Room4=='0'){
+        document.room4.src = img[0];
+        document.getElementById("time4").innerHTML = sent.value.LastTime4;
         }
-           document.getElementById("time9").innerHTML = sent.value.LastUpdatedTime; 
-	
+    	// Room 5 --------------------------------------------------------------    	
+    	if(sent.value.Room5=='1'){
+    	document.room5.src = img[1];
+    	document.getElementById("time5").innerHTML = sent.value.LastTime5;
+        }else if(sent.value.Room5=='0'){
+        document.room5.src = img[0];
+        document.getElementById("time5").innerHTML = sent.value.LastTime5;
+        }
+    	// Room 6 --------------------------------------------------------------    	
+    	if(sent.value.Room6=='1'){
+    	document.room6.src = img[1];
+    	document.getElementById("time6").innerHTML = sent.value.LastTime6;
+        }else if(sent.value.Room6=='0'){
+        document.room6.src = img[0];
+        document.getElementById("time6").innerHTML = sent.value.LastTime6;
+        }
+    	// Room 7 --------------------------------------------------------------    	
+    	if(sent.value.Room7=='1'){
+    	document.room7.src = img[1];
+    	document.getElementById("time7").innerHTML = sent.value.LastTime7;
+        }else if(sent.value.Room7=='0'){
+        document.room7.src = img[0];
+        document.getElementById("time7").innerHTML = sent.value.LastTime7;
+        }
+        // Room 8 --------------------------------------------------------------    	
+    	if(sent.value.Room8=='1'){
+    	document.room7.src = img[1];
+    	document.getElementById("time8").innerHTML = sent.value.LastTime8;
+        }else if(sent.value.Room8=='0'){
+        document.room8.src = img[0];
+        document.getElementById("time8").innerHTML = sent.value.LastTime8;
+        }
+    	// Room 9 --------------------------------------------------------------
+    	if(sent.value.Room9=='1'){
+    	document.room9.src = img[1];
+    	document.getElementById("time9").innerHTML = sent.value.LastTime9;
+        }else if(sent.value.Room9=='0'){
+        document.room9.src = img[0];
+        document.getElementById("time9").innerHTML = sent.value.LastTime9;
+        }
 }
     
    // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
