@@ -18,16 +18,10 @@ ds.on('send', changeViewFromSentMode);
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
     	
-    	if(sent.value.Room9=='1'){
-           document.room9.src = img[1];
-           document.getElementById("time9").innerHTML = sent.value.LastUpdatedTime; 
-
-        }else if(sent.value.Room9=='0'){
-	       document.room9.src = img[0];
-	       document.getElementById("time9").innerHTML = sent.value.LastUpdatedTime; 
-
+    	if(sent.value.Room9=='1'){document.room9.src = img[1];
+        }else if(sent.value.Room9=='0'){ document.room9.src = img[0];
         }
-           //document.getElementById("time9").innerHTML = sent.value.LastUpdatedTime; 
+           document.getElementById("time9").innerHTML = sent.value.LastUpdatedTime; 
 	
 }
     
