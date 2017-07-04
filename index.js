@@ -70,7 +70,7 @@ function changeViewFromSentMode(sent){
     	var ms1 = Date.parse(sent.value.LastTime9);	
         //var d1 = new Date(ms1);
         
-        var m = new moment(ms1); //現在の時刻が入る
+        var m = new moment(Date(ms1)); //現在の時刻が入る
         var output = m.format('M月D日(ddd)  HH:mm:ss');
         document.getElementById("time9").innerHTML = output.toString();
     	
@@ -79,7 +79,7 @@ function changeViewFromSentMode(sent){
         var ms1 = Date.parse(sent.value.LastTime9);	 //文字列として受信したものを日時データに変換する
         //var d1 = new Date(ms1);
         
-        var m = new moment(ms1); //現在の時刻が入る
+        var m = new moment(Date(ms1)); //現在の時刻が入る
         var output = m.format('M月D日(ddd)  HH:mm:ss');
         document.getElementById("time9").innerHTML = output.toString();
         }
