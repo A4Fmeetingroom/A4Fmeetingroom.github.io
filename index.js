@@ -63,7 +63,7 @@ function changeViewFromSentMode(sent){
     	document.room9.src = img[1];
     	var ms1 = Date.parse(sent.value.LastTime9);	
         var d1 = new Date(ms1);
-        document.getElementById("time9").innerHTML = d1.toString();
+        //document.getElementById("time9").innerHTML = d1.toString();
         
         var m = moment(); //現在の時刻が入る
         var output = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
@@ -75,7 +75,7 @@ function changeViewFromSentMode(sent){
         document.room9.src = img[0];        
         var ms1 = Date.parse(sent.value.LastTime9);	 //文字列として受信したものを日時データに変換する
         var d1 = new Date(ms1);
-        document.getElementById("time9").innerHTML = d1.toString();
+        //document.getElementById("time9").innerHTML = d1.toString();
         
         var m = moment(); //現在の時刻が入る
         var output = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
