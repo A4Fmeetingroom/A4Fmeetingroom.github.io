@@ -14,6 +14,12 @@ img = new Array("images/free.png","images/busy.png");
 	
 ds.on('send', changeViewFromSentMode);
 
+moment.lang('ja', {
+    weekdays: ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"],
+    weekdaysShort: ["日","月","火","水","木","金","土"],
+});
+
+
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
     	
@@ -66,7 +72,7 @@ function changeViewFromSentMode(sent){
         //document.getElementById("time9").innerHTML = d1.toString();
         
         var m = moment(); //現在の時刻が入る
-        var output = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
+        var output = m.format('M月D日(ddd)  HH:mm:ss');
         document.getElementById("time9").innerHTML = output.toString(); // => 2014年10月24日 11:44:00 Friday
     	
     	
@@ -78,7 +84,7 @@ function changeViewFromSentMode(sent){
         //document.getElementById("time9").innerHTML = d1.toString();
         
         var m = moment(); //現在の時刻が入る
-        var output = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
+        var output = m.format('M月D日(ddd)  HH:mm:ss');
         document.getElementById("time9").innerHTML = output.toString(); // => 2014年10月24日 11:44:00 Friday
         
         
