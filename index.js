@@ -68,27 +68,21 @@ function changeViewFromSentMode(sent){
     	if(sent.value.Room9=='2'){
     	document.room9.src = img[1];
     	var ms1 = Date.parse(sent.value.LastTime9);	
-        var d1 = new Date(ms1);
-        //document.getElementById("time9").innerHTML = d1.toString();
+        //var d1 = new Date(ms1);
         
-        var m = moment(); //現在の時刻が入る
+        var m = new moment(ms1); //現在の時刻が入る
         var output = m.format('M月D日(ddd)  HH:mm:ss');
-        document.getElementById("time9").innerHTML = output.toString(); // => 2014年10月24日 11:44:00 Friday
-    	
-    	
+        document.getElementById("time9").innerHTML = output.toString();
     	
         }else if(sent.value.Room9=='1'){
         document.room9.src = img[0];        
         var ms1 = Date.parse(sent.value.LastTime9);	 //文字列として受信したものを日時データに変換する
-        var d1 = new Date(ms1);
-        //document.getElementById("time9").innerHTML = d1.toString();
+        //var d1 = new Date(ms1);
         
-        var m = moment(); //現在の時刻が入る
+        var m = new moment(ms1); //現在の時刻が入る
         var output = m.format('M月D日(ddd)  HH:mm:ss');
-        document.getElementById("time9").innerHTML = output.toString(); // => 2014年10月24日 11:44:00 Friday
-        
-        
-	}
+        document.getElementById("time9").innerHTML = output.toString();
+        }
 }
     
    // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
