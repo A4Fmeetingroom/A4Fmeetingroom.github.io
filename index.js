@@ -14,12 +14,6 @@ img = new Array("images/free.png","images/busy.png");
 	
 ds.on('send', changeViewFromSentMode);
 
-	var ms1 = Date.parse("2009/08/11 08:14:45");	
-var d1 = new Date(ms1);
-//print(d1.toString());
-		document.getElementById("time9").innerHTML = d1.toString();
-	
-	
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
     	
