@@ -61,32 +61,25 @@ function changeViewFromSentMode(sent){
     	// Room 9 --------------------------------------------------------------
     	if(sent.value.Room9=='2'){
     	document.room9.src = img[1];
-    	//document.getElementById("time9").innerHTML = sent.value.LastTime9;
     	var ms1 = Date.parse(sent.value.LastTime9);	
         var d1 = new Date(ms1);
         document.getElementById("time9").innerHTML = d1.toString();
-        //var new AAA = dateToFormatString(new  Date(ms1), '%YYYY%年%MM%月%DD%日 (%w%) %HH%時%mm%分%ss%秒');
-        //document.getElementById("time9").innerHTML = AAA;
-    	var m = moment(); //現在の時刻が入る
+        
+        var m = moment(); //現在の時刻が入る
         var output = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
-        document.getElementById("time9").innerHTML = output; // => 2014年10月24日 11:44:00 Friday
+        document.getElementById("time9").innerHTML = output.toString(); // => 2014年10月24日 11:44:00 Friday
     	
     	
     	
         }else if(sent.value.Room9=='1'){
-        document.room9.src = img[0];
-        //document.getElementById("time9").innerHTML = sent.value.LastTime9;
-        
+        document.room9.src = img[0];        
         var ms1 = Date.parse(sent.value.LastTime9);	 //文字列として受信したものを日時データに変換する
         var d1 = new Date(ms1);
         document.getElementById("time9").innerHTML = d1.toString();
         
-        //var new AAA = dateToFormatString(new  Date(ms1), '%YYYY%年%MM%月%DD%日 (%w%) %HH%時%mm%分%ss%秒');
-        //document.getElementById("time9").innerHTML = AAA;
-        
         var m = moment(); //現在の時刻が入る
         var output = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
-        document.getElementById("time9").innerHTML = output; // => 2014年10月24日 11:44:00 Friday
+        document.getElementById("time9").innerHTML = output.toString(); // => 2014年10月24日 11:44:00 Friday
         
         
 	}
