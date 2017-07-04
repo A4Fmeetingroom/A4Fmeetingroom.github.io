@@ -67,7 +67,9 @@ function changeViewFromSentMode(sent){
         //document.getElementById("time9").innerHTML = d1.toString();
         //var new AAA = dateToFormatString(new  Date(ms1), '%YYYY%年%MM%月%DD%日 (%w%) %HH%時%mm%分%ss%秒');
         //document.getElementById("time9").innerHTML = AAA;
-    	
+    	var m = moment(); //現在の時刻が入る
+        var output = m.format('YYYY年MM月DD日 HH:mm:ss dddd');
+        document.getElementById("time9").innerHTML = output; // => 2014年10月24日 11:44:00 Friday
     	
     	
     	
