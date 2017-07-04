@@ -65,7 +65,8 @@ function changeViewFromSentMode(sent){
     	var ms1 = Date.parse(sent.value.LastTime9);	
         //var d1 = new Date(ms1);
         //document.getElementById("time9").innerHTML = d1.toString();
-        document.getElementById("time9").innerHTML = Date(ms1).toString();
+        AAA = dateToFormatString(new  Date(ms1), '%YYYY%年%MM%月%DD%日 (%w%) %HH%時%mm%分%ss%秒');
+        document.getElementById("time9").innerHTML = AAA;
     	
         }else if(sent.value.Room9=='1'){
         document.room9.src = img[0];
