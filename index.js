@@ -65,8 +65,13 @@ function changeViewFromSentMode(sent){
     	document.getElementById("time9").innerHTML = sent.value.LastTime9;
         }else if(sent.value.Room9=='1'){
         document.room9.src = img[0];
-        document.getElementById("time9").innerHTML = sent.value.LastTime9;
-        }
+        //document.getElementById("time9").innerHTML = sent.value.LastTime9;
+        
+var ms1 = Date.parse("2009/08/11 08:14:45");	
+var d1 = new Date(ms1);
+//print(d1.toString());
+		document.getElementById("time9").innerHTML = d1.toString();
+	}
 }
     
    // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
