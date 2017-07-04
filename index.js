@@ -64,24 +64,22 @@ function changeViewFromSentMode(sent){
         document.room8.src = img[0];
         document.getElementById("time8").innerHTML = sent.value.LastTime8;
         }
+        if(sent.value.Room8 >'0'){
+        	 var m = new moment(); //現在の時刻が入る
+             var output = m.format('M月D日(ddd)  HH:mm:ss');
+             document.getElementById("time8").innerHTML = output.toString();
+        }
     	// Room 9 --------------------------------------------------------------
     	if(sent.value.Room9=='2'){
-    	document.room9.src = img[1];
-    	var ms1 = Date.parse(sent.value.LastTime9);	
-        //var d1 = new Date(ms1);
-        
-        var m = new moment(Date(ms1)); //現在の時刻が入る
-        var output = m.format('M月D日(ddd)  HH:mm:ss');
-        document.getElementById("time9").innerHTML = output.toString();
-    	
-        }else if(sent.value.Room9=='1'){
-        document.room9.src = img[0];        
-        var ms1 = Date.parse(sent.value.LastTime9);	 //文字列として受信したものを日時データに変換する
-        //var d1 = new Date(ms1);
-        
-        var m = new moment(Date(ms1)); //現在の時刻が入る
-        var output = m.format('M月D日(ddd)  HH:mm:ss');
-        document.getElementById("time9").innerHTML = output.toString();
+    	     document.room9.src = img[1];
+        }
+        if(sent.value.Room9=='1'){
+             document.room9.src = img[0];
+        }
+        if(sent.value.Room9 >'0'){
+        	 var m = new moment(); //現在の時刻が入る
+             var output = m.format('M月D日(ddd)  HH:mm:ss');
+             document.getElementById("time9").innerHTML = output.toString();
         }
 }
     
