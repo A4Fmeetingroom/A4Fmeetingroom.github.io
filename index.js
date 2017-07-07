@@ -7,6 +7,8 @@ window.onload = function () {
 	//console.log(" OK が押された:" + result);   
     //var milkcocoa = MilkCocoa.connectWithApiKey(result+".mlkcca.com", "EBMFKPMCMGLNAHNN", "VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP");
 var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
+console.log('接続完了');
+	
 var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
 	
 //画像を配列に格納する
@@ -19,7 +21,9 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 
-
+milkcocoa.disconnect();
+console.log('切断　完了！！');
+	
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
     	
