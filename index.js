@@ -99,6 +99,9 @@ function changeViewFromSentMode(sent){
              var output = m.format('M月D日(ddd)  HH:mm:ss');
              document.getElementById("time9").innerHTML = output.toString();
         }
+	
+	milkcocoa.disconnect();
+　　　　　　　console.log('切断　完了！！');
 }
     
    // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
@@ -106,7 +109,6 @@ function changeViewFromSentMode(sent){
 	//console.log(" CANCEL が押された");
 //}
 
-	milkcocoa.disconnect();
-console.log('切断　完了！！');
+
 	
 };
