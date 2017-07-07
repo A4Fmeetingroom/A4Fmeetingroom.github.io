@@ -7,7 +7,7 @@ window.onload = function () {
 	//console.log(" OK が押された:" + result);   
     //var milkcocoa = MilkCocoa.connectWithApiKey(result+".mlkcca.com", "EBMFKPMCMGLNAHNN", "VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP");
 var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
-console.log('接続完了');
+
 	
 var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
 	
@@ -21,12 +21,11 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 
-milkcocoa.disconnect();
-console.log('切断　完了！！');
+
 	
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
-    	
+    	console.log('接続完了');
     	// Room 4 --------------------------------------------------------------    	
     	if(sent.value.Room4=='2'){  //使用中の場合
     		document.room4.src = img[1];
@@ -107,4 +106,7 @@ function changeViewFromSentMode(sent){
 	//console.log(" CANCEL が押された");
 //}
 
+	milkcocoa.disconnect();
+console.log('切断　完了！！');
+	
 };
