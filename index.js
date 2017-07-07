@@ -100,10 +100,11 @@ function changeViewFromSentMode(sent){
              document.getElementById("time9").innerHTML = output.toString();
         }
 	
-	milkcocoa.disconnect();
-　　　　　　　console.log('切断　完了！！');
+	
 }
-    
+    milkcocoa.disconnect();
+　　　　　　　console.log('切断　完了！！');
+	
    // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
 //}else{
 	//console.log(" CANCEL が押された");
