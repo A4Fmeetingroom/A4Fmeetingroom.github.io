@@ -112,7 +112,7 @@ function changeViewFromSentMode(sent){
 	//console.log(" CANCEL が押された");
 //}
 
-// <script type="text/javascript">
+ <script type="text/javascript">
   function delayExec() {
     setTimeout(function () {
       target = document.getElementById("output");
@@ -120,7 +120,7 @@ function changeViewFromSentMode(sent){
       target.innerText = "ボタンがクリックされました。";
     }, 1500);
   }
- // </script>
+  </script>
   	  
 
   
