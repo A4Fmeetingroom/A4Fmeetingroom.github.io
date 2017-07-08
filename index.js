@@ -6,6 +6,7 @@ window.onload = function () {
    //if(result){	
 	//console.log(" OK が押された:" + result);   
     //var milkcocoa = MilkCocoa.connectWithApiKey(result+".mlkcca.com", "EBMFKPMCMGLNAHNN", "VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP");
+
 var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
 
 	
@@ -99,17 +100,28 @@ function changeViewFromSentMode(sent){
              var output = m.format('M月D日(ddd)  HH:mm:ss');
              document.getElementById("time9").innerHTML = output.toString();
         }
+        
+	    //milkcocoa.disconnect();
+　　　　//console.log('切断　完了！！');
 	
+
 	
 }
-    milkcocoa.disconnect();
-　　　　　　　console.log('切断　完了！！');
-	
    // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
 //}else{
 	//console.log(" CANCEL が押された");
 //}
 
+
+  function func() {
+      target = document.getElementById("output");
+      target.style.backgroundColor = "#ffe35f";
+      target.innerText = "ボタンがクリックされました。";
+    }
+
+    function delayExec() {
+      setTimeout('func();', 1500);
+    }
 
 	
 };
