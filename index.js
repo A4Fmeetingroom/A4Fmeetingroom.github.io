@@ -22,7 +22,7 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 
- function kakunin(btnNo){
+function kakunin(btnNo){
   if (btnNo == 1){
     link = "Yahoo!Japan";
     href = "http://www.yahoo.co.jp/";
