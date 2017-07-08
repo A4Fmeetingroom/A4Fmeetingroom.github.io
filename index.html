@@ -10,7 +10,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 	
 <link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+
+  <script type="text/javascript">
+  function delayExec() {
+    setTimeout(function () {
+      target = document.getElementById("output");
+      target.style.backgroundColor = "#e2abff";
+      target.innerText = "ボタンがクリックされました。";
+    }, 1500);
+  }
+  </script>
 </head>
+
+
 <body  bgcolor="#333333" text="#bbbbbb">
 <!-- Licensed under MIT License - http://www.opensource.org/licenses/mit-license.php -->
 

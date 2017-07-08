@@ -113,15 +113,6 @@ function changeViewFromSentMode(sent){
 //}
 
 
-  function func() {
-      target = document.getElementById("output");
-      target.style.backgroundColor = "#ffe35f";
-      target.innerText = "ボタンがクリックされました。";
-    }
-
-    function delayExec() {
-      setTimeout('func();', 1500);
-    }
-
+  
 	
 };
