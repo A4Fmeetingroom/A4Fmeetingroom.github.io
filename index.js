@@ -112,15 +112,20 @@ function changeViewFromSentMode(sent){
 	//console.log(" CANCEL が押された");
 //}
 
- <script type="text/javascript">
-  function delayExec() {
-    setTimeout(function () {
-      target = document.getElementById("output");
-      target.style.backgroundColor = "#e2abff";
-      target.innerText = "ボタンがクリックされました。";
-    }, 1500);
+ function kakunin(btnNo){
+  if (btnNo == 1){
+    link = "Yahoo!Japan";
+    href = "http://www.yahoo.co.jp/";
+  }else{
+    link = "Google";
+    href = "http://www.google.co.jp/";
   }
-  </script>
+
+  ret = confirm(link + "へ飛びます。宜しいですか？");
+  if (ret == true){
+    location.href = href;
+  }
+}
   	  
 
   
