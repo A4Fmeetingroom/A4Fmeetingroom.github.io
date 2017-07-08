@@ -22,6 +22,20 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 
+ function kakunin(btnNo){
+  if (btnNo == 1){
+    link = "Yahoo!Japan";
+    href = "http://www.yahoo.co.jp/";
+  }else{
+    link = "Google";
+    href = "http://www.google.co.jp/";
+  }
+
+  ret = confirm(link + "へ飛びます。宜しいですか？");
+  if (ret == true){
+    location.href = href;
+  }
+}
 
 	
 function changeViewFromSentMode(sent){
@@ -112,22 +126,6 @@ function changeViewFromSentMode(sent){
 	//console.log(" CANCEL が押された");
 //}
 
- function kakunin(btnNo){
-  if (btnNo == 1){
-    link = "Yahoo!Japan";
-    href = "http://www.yahoo.co.jp/";
-  }else{
-    link = "Google";
-    href = "http://www.google.co.jp/";
-  }
 
-  ret = confirm(link + "へ飛びます。宜しいですか？");
-  if (ret == true){
-    location.href = href;
-  }
-}
-  	  
 
-  
-	
 };
