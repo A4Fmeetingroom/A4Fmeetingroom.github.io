@@ -112,6 +112,16 @@ function changeViewFromSentMode(sent){
 	//console.log(" CANCEL が押された");
 //}
 
+// <script type="text/javascript">
+  function delayExec() {
+    setTimeout(function () {
+      target = document.getElementById("output");
+      target.style.backgroundColor = "#e2abff";
+      target.innerText = "ボタンがクリックされました。";
+    }, 1500);
+  }
+ // </script>
+  	  
 
   
 	
