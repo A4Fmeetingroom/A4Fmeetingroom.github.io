@@ -7,6 +7,7 @@ var ds = milkcocoa.dataStore('esp8266');              // データ取得先の�
 
 img = new Array("images/free.png","images/busy.png");	//画像を配列に格納する
 
+//------------------------------------------------------------------------------
 function kakunin(btnNo){
   if (btnNo == 1){
     link = "Yahoo!Japan";
@@ -14,14 +15,24 @@ function kakunin(btnNo){
   }else{    
    
    ds.on('send', changeViewFromSentMode);    //sendを監視
-
+//------------------------------------------------------------------------------
 moment.lang('ja', {
     weekdays: ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"],
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
+//------------------------------------------------------------------------------
+  }  //elseおわり
+
+  //ret = confirm(link + "へ飛びます。宜しいですか？");
+  //if (ret == true){
+  //  location.href = href;
+  
+}  //function kakunin おわり
+  
 
 
-	
+
+
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
     	console.log('接続完了');
@@ -105,16 +116,6 @@ function changeViewFromSentMode(sent){
 
 	
 }
-   
-   
-  }
-
-  //ret = confirm(link + "へ飛びます。宜しいですか？");
-  //if (ret == true){
-  //  location.href = href;
-  }
-}
-
 
 
 
