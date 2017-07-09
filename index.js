@@ -13,9 +13,6 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 //------------------------------------------------------------------------------
-// Autoclose();
-
-//------------------------------------------------------------------------------
 
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
@@ -92,39 +89,14 @@ function changeViewFromSentMode(sent){
         	 var m = new moment(); //現在の時刻が入る
              var output = m.format('M月D日(ddd)  HH:mm:ss');
              document.getElementById("time9").innerHTML = output.toString();
-        }
-        
-        //console.log('changeなんちゃらの関数に来たよ。);
+        }        
 	    milkcocoa.disconnect();
-　　　　//console.log('切断　完了！！');
-	
-
 }
-
 //---------------------------------------------------------
-function kakunin(btnNo){
-	if (btnNo == 1){
-      ret = confirm("ミルクココアを切断します。宜しいですか？");
-       if (ret == true){
-       milkcocoa.disconnect();
-       }
-    }
-    if (btnNo == 2){
-      ret = confirm("ミルクココアを再接続します。宜しいですか？");
-       if (ret == true){
-       //var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
-　　　 //var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
-       //ds.on('send', changeViewFromSentMode);    //sendを監視
-       location.reload();
-
-       }
-    }
+function reconnect(){	
+      //ret = confirm("ミルクココアを再接続します。宜しいですか？");
+      //if (ret == true){       
+       location.reload();    //ページをリロードする。つまりmilkcocoaに再接続する
+      //}
 }
 //-------------------------------------------------------
-function Autoclose(){
-    setTimeout('closeMilk()', 20000);   // 20秒後に関数 closeMilk をコールする
-}
-//-------------------------------------------------------
-function coloseMilk(){
-    milkcocoa.disconnect();
-}
