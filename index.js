@@ -7,7 +7,7 @@ function kakunin(btnNo){
     href = "http://www.google.co.jp/";
   }
 
-  ret = confirm(link + "へ飛びます。宜しいですか？");
+  ret = confirm(link + "へ飛んでいいか？");
   if (ret == true){
     location.href = href;
   }
