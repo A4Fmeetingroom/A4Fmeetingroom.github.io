@@ -13,8 +13,7 @@ function kakunin(btnNo){
   }
 }
 
-
-}
+/*
 
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
@@ -100,3 +99,4 @@ function changeViewFromSentMode(sent){
 
 	
 }
+*/
