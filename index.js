@@ -11,8 +11,7 @@ function kakunin(btnNo){
   if (btnNo == 1){
     link = "Yahoo!Japan";
     href = "http://www.yahoo.co.jp/";
-  }else{
-    link = "会議室更新";
+  }else{    
    
    ds.on('send', changeViewFromSentMode);    //sendを監視
 
