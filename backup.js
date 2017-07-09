@@ -1,17 +1,41 @@
+// UTF-8 BOM無しで保存して下さい。そうしないと日本語が文字化けします。
+
+//window.onload = function () {
+
+var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
+var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
+
+img = new Array("images/free.png","images/busy.png");	//画像を配列に格納する
+
+console.log('ミルクココアに繋いだよ');
+
+//------------------------------------------------------------------------------
 function kakunin(btnNo){
   if (btnNo == 1){
     link = "Yahoo!Japan";
     href = "http://www.yahoo.co.jp/";
-  }else{
-    link = "Google";
-    href = "http://www.google.co.jp/";
-  }
+    console.log('Yahhoボタンを押したよ。);
+  }else{    
+   
+   ds.on('send', changeViewFromSentMode);    //sendを監視
+//------------------------------------------------------------------------------
+moment.lang('ja', {
+    weekdays: ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"],
+    weekdaysShort: ["日","月","火","水","木","金","土"],
+});
+//------------------------------------------------------------------------------
+console.log('2個めのボタンを押したよ。);
+  }  //elseおわり
 
   ret = confirm(link + "へ飛びます。宜しいですか？");
   if (ret == true){
     location.href = href;
   }
-}
+}  //function kakunin おわり
+  
+
+
+
 
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
@@ -97,3 +121,14 @@ function changeViewFromSentMode(sent){
 
 	
 }
+
+
+
+   // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
+//}else{
+	//console.log(" CANCEL が押された");
+//}
+
+
+
+//  };    //window.loadのとじカッコ
