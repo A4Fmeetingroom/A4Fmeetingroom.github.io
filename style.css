@@ -66,8 +66,20 @@ button.button1 {
   height: 54px;
   text-align: center;
   text-decoration: none;
-  line-height: 54px;
+  
   outline: none;
+  
+  border: 1px solid #15aeec;
+  background-color: #49c0f0;
+  background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
+  background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
+  border-radius: 4px;
+  color: #fff;
+  line-height: 50px;
+  -webkit-transition: none;
+  transition: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  
 }
 button.button1::before,
 button.button1::after {
@@ -88,19 +100,6 @@ button.button1::after {
 }
 
 
-
-button.button1 {
-  border: 1px solid #15aeec;
-  background-color: #49c0f0;
-  background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
-  background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
-  border-radius: 4px;
-  color: #fff;
-  line-height: 50px;
-  -webkit-transition: none;
-  transition: none;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-}
 button.button1:hover {
   border:1px solid #1090c3;
   background-color: #1ab0ec;
@@ -116,29 +115,3 @@ button.button1:active {
 
 
 
-
-/*
-button.button1 {
-    font-size: 1.4em; 
-    /* font-weight: bold;  */
-    padding: 10px 30px;  /* 縦方向に10px、横方向に30pxの余白を指定 */
-    color: #fff;  /* 文字色を白色に指定 */
-    background-color: #aa4;
-    border-style: none;
-
-    box-shadow: 2px 2px 3px 1px #666;
-    -moz-box-shadow: 2px 2px 3px 1px #666;
-    -webkit-box-shadow: 2px 2px 3px 1px #666;
-    
-    text-shadow: 1px 1px 2px #000;
-    
-    /* 角丸の指定 */
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-button.button1:hover {
-    opacity: 0.8;  //透明度を20%に指定
-}
-*/
