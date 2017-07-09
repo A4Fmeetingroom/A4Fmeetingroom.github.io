@@ -14,6 +14,7 @@ function kakunin(btnNo){
   if (btnNo == 1){
     link = "Yahoo!Japan";
     href = "http://www.yahoo.co.jp/";
+    console.log('Yahhoボタンを押したよ。);
   }else{    
    
    ds.on('send', changeViewFromSentMode);    //sendを監視
