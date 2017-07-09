@@ -27,10 +27,10 @@ moment.lang('ja', {
 console.log('2個めのボタンを押したよ。);
   }  //elseおわり
 
-  //ret = confirm(link + "へ飛びます。宜しいですか？");
-  //if (ret == true){
-  //  location.href = href;
-  
+  ret = confirm(link + "へ飛びます。宜しいですか？");
+  if (ret == true){
+    location.href = href;
+  }
 }  //function kakunin おわり
   
 
