@@ -14,6 +14,8 @@ function kakunin(btnNo){
 }
 
 
+}
+
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
     	console.log('接続完了');
