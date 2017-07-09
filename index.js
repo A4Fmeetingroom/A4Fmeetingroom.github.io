@@ -1,12 +1,8 @@
 // UTF-8 BOM無しで保存して下さい。そうしないと日本語が文字化けします。
 
-//window.onload = function () {
-
 var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
 var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
-
 img = new Array("images/free.png","images/busy.png");	//画像を配列に格納する
-
 
 //------------------------------------------------------------------------------
 
@@ -18,7 +14,15 @@ moment.lang('ja', {
 });
 //------------------------------------------------------------------------------
 
-
+function kakunin(){   
+    link = "ミルクココア　切断します。";
+    href = "http://www.google.co.jp/"; 
+  ret = confirm(link);
+  if (ret == true){
+  	  milkcocoa.disconnect();
+    // location.href = href;
+  }
+}
 
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
@@ -102,16 +106,4 @@ function changeViewFromSentMode(sent){
 　　　　//console.log('切断　完了！！');
 	
 
-	
 }
-
-
-
-   // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
-//}else{
-	//console.log(" CANCEL が押された");
-//}
-
-
-
-//  };    //window.loadのとじカッコ
