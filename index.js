@@ -7,7 +7,7 @@ var ds = milkcocoa.dataStore('esp8266');              // データ取得先の�
 
 img = new Array("images/free.png","images/busy.png");	//画像を配列に格納する
 
-console.log('ミルクココアに繋いだよ');
+//console.log('ミルクココアに繋いだよ');
 
 //------------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ moment.lang('ja', {
 
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
-    	console.log('接続完了');
+    	//console.log('接続完了');
     	// Room 4 --------------------------------------------------------------    	
     	if(sent.value.Room4=='2'){  //使用中の場合
     		document.room4.src = img[1];
@@ -98,7 +98,7 @@ function changeViewFromSentMode(sent){
              document.getElementById("time9").innerHTML = output.toString();
         }
         
-        console.log('changeなんちゃらの関数に来たよ。);
+        //console.log('changeなんちゃらの関数に来たよ。);
 	    //milkcocoa.disconnect();
 　　　　//console.log('切断　完了！！');
 	
