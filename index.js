@@ -15,11 +15,11 @@ moment.lang('ja', {
 //------------------------------------------------------------------------------
 
 
-function kakunin(btnNo){
-  if (btnNo == 1){
+function kakunin(){
+  //if (btnNo == 1){
     ret = confirm("ミルクココアを切断します。宜しいですか？"");
     if (ret == true){
-       //milkcocoa.disconnect();
+       milkcocoa.disconnect();
     }
   }
   
