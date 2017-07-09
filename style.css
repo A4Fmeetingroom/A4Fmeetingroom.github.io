@@ -66,17 +66,17 @@ h4 {
   font-size: 1.13em;
   display: inline-block;
   width: 130px;
-  height: 30px;
+  height: 35px;
   text-align: center;
   text-decoration: none;
-  line-height: 30px;
+  line-height: 35px;
   outline: none;
   
   position: relative;
   background-color: #444444;
   border-radius: 4px;
   color: #fff;
-  line-height: 28px;
+  line-height: 33px;
   
   box-shadow: 0 2px 0 #777799;
   /*text-shadow: 0 1px 1px rgba(0, 0, 0, .3);  */
