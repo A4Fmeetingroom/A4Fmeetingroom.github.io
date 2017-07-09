@@ -1,15 +1,82 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta http-equiv="Content-Script-Type" content="text/javascript">
+<!-- UTF-8 BOM無しで保存して下さい。そうしないと日本語が文字化けします。 -->
 
-<script type="text/javascript" src="index.js">
-</script>
+<!DOCTYPE html>
+<html lang="ja">
 
-<title>JavaScript テスト</title>
+
+
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="index.js"></script>
+
+<title>A棟4F　会議室4～9　空き状況リアルタイムチェック</title>
+<meta name="Description" content="" />
+<meta name="Keywords"  content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+
+ 
 </head>
-<body>
+
+
+<body  bgcolor="#333333" text="#bbbbbb">
+<!-- Licensed under MIT License - http://www.opensource.org/licenses/mit-license.php -->
+
+<h1>A棟4F　会議室4～9 空き状況</h1>
+
+<h4><p>30秒ごとに更新されます。<BR>更新されない場合、故障の可能性がありますので管理者に連絡して下さい。</p></h4>
+
+<h3>
+ <table align="middle" border="0">
+	<tbody   class="table1">
+		<tr align="center">
+			<th width="100"></th>
+			<th width="120" >状況</th>
+			<th width="180" >更新日時</th>
+		</tr>
+		
+		<tr align="center">
+			<td>会議室4</td>
+			<td><p class="gazou"><img name="room4" src="images/tranceparent.png" alt=""></p></td>
+			<td><p id="time4" class="updatetime">センサ　未設置</p></td>			
+		</tr>
+		<tr align="center">
+			<td>会議室5</td>
+			<td><p class="gazou"><img name="room5" src="images/tranceparent.png" alt=""></p></td>
+			<td><p id="time5" class="updatetime">センサ　未設置</p></td>
+		</tr>
+		<tr align="center">
+			<td>会議室6</td>
+			<td><p class="gazou"><img name="room6" src="images/tranceparent.png" alt=""></p></td>
+			<td><p id="time6" class="updatetime">センサ　未設置</p></td>
+		</tr>
+		<tr align="center">
+			<td>会議室7</td>
+			<td><p class="gazou"><img name="room7" src="images/tranceparent.png" alt=""</p></td>
+			<td><p id="time7" class="updatetime">センサ　未設置</p></td>
+		</tr>
+		<tr align="center">
+			<td>会議室8</td>
+			<td><p class="gazou"><img name="room8" src="images/tranceparent.png" alt=""></p></td>
+			<td><p id="time8" class="updatetime">センサ　未設置</p></td>
+		</tr>
+		<tr align="center">
+			<td>会議室9</td>
+			<td><p class="gazou"><img name="room9" src="images/tranceparent.png" alt=""></p></td> 
+			<td><p id="time9" class="updatetime">更新中</p></td>
+		</tr>
+	</tbody>
+</table>
+</h3>
+
+ <div class="NotesDB" align="center">
+  <a href="notes://DOMR01/4925704A002DD36D"><img src="images/reserve.png"  width="98" height="81" border="0"></a>
+ </div>
+<BR>
+<h4><p align="center" color=#f33 >by　Ichiro Kadota</p></h4>
+
+
 
 <p>
 <form name="test">
@@ -18,5 +85,10 @@
 </form>
 </p>
 
+
+
+<script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script> 
+<script src="moment.min.js"></script>
+  
 </body>
 </html>
