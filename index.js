@@ -23,6 +23,7 @@ function kakunin(btnNo){
     }
   }
   
+  /*
   if (btnNo == 2){
     ret = confirm("ミルクココアを再接続します。宜しいですか？");
     if (ret == true){
@@ -33,6 +34,8 @@ function kakunin(btnNo){
    //ds.on('send', changeViewFromSentMode);    //sendを監視
     }
   }
+  */
+  
 }
 //------------------------------------------------------------------------------
 
