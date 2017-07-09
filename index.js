@@ -13,7 +13,7 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 //------------------------------------------------------------------------------
-Autoclose();
+// Autoclose();
 
 //------------------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ function changeViewFromSentMode(sent){
         }
         
         //console.log('changeなんちゃらの関数に来たよ。);
-	    //milkcocoa.disconnect();
+	    milkcocoa.disconnect();
 　　　　//console.log('切断　完了！！');
 	
 
