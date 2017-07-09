@@ -13,6 +13,10 @@ function kakunin(btnNo){
   }
 }
 
+function changeViewFromSentMode(){
+	
+}
+
 /*
 
 function changeViewFromSentMode(sent){
