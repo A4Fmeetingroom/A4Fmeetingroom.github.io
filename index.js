@@ -107,5 +107,13 @@ function kakunin(btnNo){
        milkcocoa.disconnect();
        }
     }
+    if (btnNo == 2){
+      ret = confirm("ミルクココアを再接続します。宜しいですか？");
+       if (ret == true){
+       
+       ds.on('send', changeViewFromSentMode);    //sendを監視
+
+       }
+    }
 }
 
