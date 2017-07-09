@@ -13,6 +13,8 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 //------------------------------------------------------------------------------
+Autoclose();
+
 //------------------------------------------------------------------------------
 
 function changeViewFromSentMode(sent){
@@ -99,7 +101,7 @@ function changeViewFromSentMode(sent){
 
 }
 
-
+//---------------------------------------------------------
 function kakunin(btnNo){
 	if (btnNo == 1){
       ret = confirm("ミルクココアを切断します。宜しいですか？");
@@ -118,4 +120,11 @@ function kakunin(btnNo){
        }
     }
 }
-
+//-------------------------------------------------------
+function Autoclose(){
+    setTimeout('closeMilk()', 20000);   // 20秒後に関数 closeMilk をコールする
+}
+//-------------------------------------------------------
+function coloseMilk(){
+    milkcocoa.disconnect();
+}
