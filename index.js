@@ -12,19 +12,9 @@ function kakunin(btnNo){
     link = "Yahoo!Japan";
     href = "http://www.yahoo.co.jp/";
   }else{
-    link = "Google";
-    href = "http://www.google.co.jp/";
-  }
-
-  ret = confirm(link + "へ飛びます。宜しいですか？");
-  if (ret == true){
-    location.href = href;
-  }
-}
-
-
-
-ds.on('send', changeViewFromSentMode);    //sendを監視
+    link = "会議室更新";
+   
+   ds.on('send', changeViewFromSentMode);    //sendを監視
 
 moment.lang('ja', {
     weekdays: ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"],
@@ -116,6 +106,19 @@ function changeViewFromSentMode(sent){
 
 	
 }
+   
+   
+  }
+
+  //ret = confirm(link + "へ飛びます。宜しいですか？");
+  //if (ret == true){
+  //  location.href = href;
+  }
+}
+
+
+
+
    // document.getElementById("Room9").src=img[1].src;  //とりあえず、条件にかかわらず画像を切り替える
 //}else{
 	//console.log(" CANCEL が押された");
