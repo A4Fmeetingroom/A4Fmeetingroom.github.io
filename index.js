@@ -82,12 +82,12 @@ function changeViewFromSentMode(sent){
     	if(sent.value.Room9=='2'){
     	     //document.room9.src = img[1];
     	     document.getElementById("joutai9").innerHTML = "使用中";
-    	     document.getElementById("joutai9").style.backgroundColor = '#ff4444';
+    	     document.getElementById("joutai9").style.backgroundColor = '#992222';
         }
         if(sent.value.Room9=='1'){
              //document.room9.src = img[0];
              document.getElementById("joutai9").innerHTML = "空室";
-             document.getElementById("joutai9").style.backgroundColor = '#22ff44';
+             document.getElementById("joutai9").style.backgroundColor = '#22aa22';
         }
         if(sent.value.Room9 >'0'){
         	 var m = new moment(); //現在の時刻が入る
