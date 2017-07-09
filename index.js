@@ -23,6 +23,7 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 //------------------------------------------------------------------------------
+console.log('2個めのボタンを押したよ。);
   }  //elseおわり
 
   //ret = confirm(link + "へ飛びます。宜しいですか？");
@@ -112,6 +113,7 @@ function changeViewFromSentMode(sent){
              document.getElementById("time9").innerHTML = output.toString();
         }
         
+        console.log('changeなんちゃらの関数に来たよ。);
 	    //milkcocoa.disconnect();
 　　　　//console.log('切断　完了！！');
 	
