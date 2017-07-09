@@ -7,6 +7,8 @@ var ds = milkcocoa.dataStore('esp8266');              // データ取得先の�
 
 img = new Array("images/free.png","images/busy.png");	//画像を配列に格納する
 
+console.log('ミルクココアに繋いだよ');
+
 //------------------------------------------------------------------------------
 function kakunin(btnNo){
   if (btnNo == 1){
