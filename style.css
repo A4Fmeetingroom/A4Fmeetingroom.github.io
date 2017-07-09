@@ -120,5 +120,6 @@ h4 {
   border-radius: 4px;
   color: #fff;
   line-height: 28px;  
-  
+  box-shadow:0px 0px 10px;
+  border:1px solid #000;
 }
