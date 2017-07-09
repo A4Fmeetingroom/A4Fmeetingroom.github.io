@@ -75,15 +75,15 @@ h4 {
   position: relative;
   background-color: #666666;
   border-radius: 4px;
-  color: #ccc;
+  color: #fff;
   line-height: 38px;
   
-  box-shadow: 0 3px 0 #0e8c73;
+  box-shadow: 0 3px 0 #9999bb;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 }
 .button1:hover {
-  background-color: #555555;
-  box-shadow: 0 3px 0 #23a188;
+  background-color: #333333;
+  box-shadow: 0 3px 0 #777799;
 }
 .button1:active {
   top: 3px;
