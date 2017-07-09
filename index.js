@@ -14,15 +14,30 @@ moment.lang('ja', {
 });
 //------------------------------------------------------------------------------
 
-function kakunin(){   
-    link = "ミルクココア　切断します。";
-    href = "http://www.google.co.jp/"; 
-  ret = confirm(link);
-  if (ret == true){
-  	  milkcocoa.disconnect();
-    // location.href = href;
+
+function kakunin(btnNo){
+  if (btnNo == 1){
+    ret = confirm("ミルクココアを切断します。宜しいですか？"");
+    if (ret == true){
+       milkcocoa.disconnect();
+    }
+  }
+  
+  if (btnNo == 2){
+    ret = confirm("ミルクココアを再接続します。宜しいですか？");
+    if (ret == true){
+      var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
+      var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
+      ds.on('send', changeViewFromSentMode);    //sendを監視
+
+//------------------------------------------------------------------------------
+
+   ds.on('send', changeViewFromSentMode);    //sendを監視
+
+    }
   }
 }
+//------------------------------------------------------------------------------
 
 function changeViewFromSentMode(sent){
     	//console.log(sent.value);
