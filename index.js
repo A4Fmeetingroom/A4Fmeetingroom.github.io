@@ -13,14 +13,6 @@ moment.lang('ja', {
     weekdaysShort: ["日","月","火","水","木","金","土"],
 });
 //------------------------------------------------------------------------------
-/*
-function kakunin(){
-    ret = confirm("ミルクココアを切断します。宜しいですか？"");
-    if (ret == true){
-       //milkcocoa.disconnect();
-    }
-}
-*/
 //------------------------------------------------------------------------------
 
 function changeViewFromSentMode(sent){
@@ -106,3 +98,14 @@ function changeViewFromSentMode(sent){
 	
 
 }
+
+
+function kakunin(btnNo){
+	if (btnNo == 1){
+      ret = confirm("ミルクココアを切断します。宜しいですか？");
+       if (ret == true){
+       milkcocoa.disconnect();
+       }
+    }
+}
+
