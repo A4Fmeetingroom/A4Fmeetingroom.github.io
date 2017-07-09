@@ -62,8 +62,8 @@ h4 {
 button.button1 {
     font-size: 1.4em; 
     /* font-weight: bold;  */
-    padding: 10px 30px;  /* c•ûŒü‚É10pxA‰¡•ûŒü‚É30px‚Ì—]”’‚ğw’è */
-    color: #fff;  /* •¶šF‚ğ”’F‚Éw’è */
+    padding: 10px 30px;  /* ç¸¦æ–¹å‘ã«10pxã€æ¨ªæ–¹å‘ã«30pxã®ä½™ç™½ã‚’æŒ‡å®š */
+    color: #fff;  /* æ–‡å­—è‰²ã‚’ç™½è‰²ã«æŒ‡å®š */
     background-color: #444;
     border-style: none;
 
@@ -75,12 +75,12 @@ button.button1 {
     text-shadow: 1px 1px 2px #000;
 
     
-    /* ŠpŠÛ‚Ìw’è */
+    /* è§’ä¸¸ã®æŒ‡å®š */
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
 button.button1:hover {
-    opacity: 0.8;  //“§–¾“x‚ğ20%‚Éw’è
+    opacity: 0.8;  //é€æ˜åº¦ã‚’20%ã«æŒ‡å®š
 }
