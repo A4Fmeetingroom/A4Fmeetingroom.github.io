@@ -73,10 +73,7 @@ button.button1 {
 
     text-shadow: 1px 1px 2px #000;
 
-    /* グラデーションの指定 */
-    background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
-    background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
-
+    
     /* 角丸の指定 */
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
