@@ -1,13 +1,12 @@
 // UTF-8 BOM無しで保存して下さい。そうしないと日本語が文字化けします。
 
-window.onload = function () {
+//window.onload = function () {
 
 var milkcocoa = MilkCocoa.connectWithApiKey('hotj38fxucb.mlkcca.com', 'EBMFKPMCMGLNAHNN', 'VicgLgOFJSOIaPaNINETIIOHCOKPPDCDcIlNENHP');
 var ds = milkcocoa.dataStore('esp8266');              // データ取得先のデータストア 
 
 img = new Array("images/free.png","images/busy.png");	//画像を配列に格納する
 
-//console.log('ミルクココアに繋いだよ');
 
 //------------------------------------------------------------------------------
 
@@ -115,4 +114,4 @@ function changeViewFromSentMode(sent){
 
 
 
-};    //window.loadのとじカッコ
+//  };    //window.loadのとじカッコ
