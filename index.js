@@ -93,10 +93,7 @@ function changeViewFromSentMode(sent){
 	    milkcocoa.disconnect();
 }
 //---------------------------------------------------------
-function reconnect(){	
-      //ret = confirm("ミルクココアを再接続します。宜しいですか？");
-      //if (ret == true){       
+function reconnect(){
        location.reload();    //ページをリロードする。つまりmilkcocoaに再接続する
-      //}
 }
 //-------------------------------------------------------

@@ -26,7 +26,7 @@ p.gazou img {
     margin: 10px 0px 0px 2px; padding: 0px;
 }
 p.updatetime {
-  color: #999;font-size: 0.8em;
+  color: #333;font-size: 0.8em;
 }
 
 p {margin: 0px;padding: 0px;}
@@ -34,14 +34,14 @@ p {margin: 0px;padding: 0px;}
 td {height: 48px;}
 
 h1 {
-    color: #eee; font-size: 1.5em; 
+    color: #222; font-size: 1.5em; 
     padding: 0px 0px;
 }
 
 h3 {
-    color: #ddd;font-size: 1.1em; 
-    border-top: 1px solid #bbb;
-	border-bottom: 1px solid #bbb;
+    color: #222;font-size: 1.1em; 
+    border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
 }
 
 h4 {  
