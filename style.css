@@ -115,7 +115,7 @@ h4 {
   height: 30px;
   text-align: center; 
   
-  position: relative;
+  position: absolute;
   background-color: #dddddd;
   border-radius: 4px;
   color: #fff;
