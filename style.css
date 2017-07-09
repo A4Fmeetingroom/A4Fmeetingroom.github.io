@@ -64,6 +64,7 @@ button.button1 {
     /* font-weight: bold;  */
     padding: 10px 30px;  /* 縦方向に10px、横方向に30pxの余白を指定 */
     color: #fff;  /* 文字色を白色に指定 */
+    background-color: #444;
     border-style: none;
 
     box-shadow: 2px 2px 3px 1px #666;
