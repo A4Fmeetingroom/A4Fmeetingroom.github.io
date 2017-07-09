@@ -108,3 +108,17 @@ h4 {
   transition: all .4s;
 }
 
+.button2{
+  font-size: 1.0em;
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  text-align: center; 
+  
+  position: relative;
+  background-color: #dddddd;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 28px;  
+  box-shadow: 0 2px 0 #777799;
+}
