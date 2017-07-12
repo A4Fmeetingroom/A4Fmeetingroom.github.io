@@ -84,8 +84,8 @@ h4 {
   vertical-align: middle;
   overflow: hidden;
   transition: .4s;
-border-bottom: none;
-box-shadow: none;
+border-bottom: solid 0px;
+box-shadow: 0px;
 
 /*
 	position: relative;
@@ -120,7 +120,7 @@ box-shadow: none;
   */
 }
 .button1:active {
-  top: 2px;
+  top: 0px;
   box-shadow: none;
 }
 /*
