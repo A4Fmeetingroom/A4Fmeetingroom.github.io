@@ -127,7 +127,7 @@ h4 {
   
   position: relative;
   background-color: #fff;
-  border-radius: 8px;
+  /*  border-radius: 8px;  */
   color: #fff;
   line-height: 28px;
   box-shadow: none;
@@ -136,7 +136,7 @@ h4 {
 }
 .button2::before,
 .button2::after {
-  position: absolute;
+  /*  position: absolute;  */
    z-index: 0;
   /*  display: block;  */
   content: '';
