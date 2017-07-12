@@ -145,28 +145,23 @@ h4 {
   display: inline-block;
   text-align: center;
   color: #1da1f3;
-  font-size: 25px;
+  font-size: 15px;
   text-decoration: none;
   }
 
-.fl_tw:hover {
-  color:#88daff;
-  transition: .5s;
-}
-
 .fl_tw .twicon{
-  border-radius: 10px;
+  border-radius: 6px;
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  font-size: 35px;
-  line-height: 50px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 30px;
   vertical-align: middle;
   color: #FFF;
   background: #1da1f3;
 }
 
 .fl_tw .twicon .fa {
-  line-height: 50px;
+  line-height: 30px;
 }
