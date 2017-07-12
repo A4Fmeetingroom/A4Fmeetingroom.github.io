@@ -81,15 +81,18 @@ function changeViewFromSentMode(sent){
     	// Room 9 --------------------------------------------------------------
     	if(sent.value.Room9=='2'){
     	     //document.room9.src = img[1];
-    	     document.getElementById("joutai9").innerHTML = "使用中";
-    	     document.getElementById("joutai9").style.backgroundColor = '#bb2222';
-    	     document.getElementById("joutai9").style.visibility="visible";
+    	     document.getElementById("moji9").innerHTML = "使用中";
+    	     document.getElementById("color9").style.backgroundColor = '#bb2222';
+    	     //document.getElementById("joutai9").style.visibility="visible";
+    	     document.getElementById("moji9").style.visibility="visible";
+             document.getElementById("color9").style.visibility="visible";
         }
         if(sent.value.Room9=='1'){
              //document.room9.src = img[0];
-             document.getElementById("joutai9").innerHTML = "空室";
-             document.getElementById("joutai9").style.backgroundColor = '#22bb22';
-             document.getElementById("joutai9").style.visibility="visible";
+             document.getElementById("moji9").innerHTML = "空室";
+             document.getElementById("color9").style.backgroundColor = '#22bb22';
+             document.getElementById("moji9").style.visibility="visible";
+             document.getElementById("color9").style.visibility="visible";
         }
         if(sent.value.Room9 >'0'){
         	 var m = new moment(); //現在の時刻が入る
