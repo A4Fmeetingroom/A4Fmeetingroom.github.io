@@ -63,36 +63,26 @@ h4 {
 }
 
 .button1 {
-/*
-    font-size: 1.05em;
+	position: relative;
+	font-size: 1.05em;
+    width: 130px;
+	height: 35px;
+	line-height: 30px;
+
+	text-align: center;
+	text-decoration: none;
+  
     display: inline-block;
     padding: 0.5em 1em;
-    text-decoration: none;
+    
     background: #668ad8;
     color: #FFF;
+    
     border-bottom: solid 4px #627295;
     border-radius: 10px;
-    */
     
-	
-	font-size: 1.13em;
-  display: inline-block;
-  width: 130px;
-  height: 35px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 35px;
-  outline: none;
-  
-  position: relative;
-  background-color: #444444;
-  border-radius: 4px;
-  color: #fff;
-  line-height: 33px;
-  
+  outline: none;  
   box-shadow: 0 2px 0 #777799;
-	 
-  /*text-shadow: 0 1px 1px rgba(0, 0, 0, .3);  */
 }
 .button1:hover {
   background-color: #666666;
@@ -123,7 +113,7 @@ h4 {
 
 .button2{
 	font-size: 1.0em;
-    width: 10px;
+    width: 100px;
     height: 30px;
  	position: relative;
     display: inline-block;
