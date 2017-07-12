@@ -90,25 +90,13 @@ h4 {
 }
 .button1:hover {
 	background: #668ad8;
-/*
-  background-color: #666666;
-  cursor: pointer;
-  box-shadow: 0 2px 0 #9999bb;
-  */
+
 }
 .button1:active {
   top: 0px;
   box-shadow: none;
 }
-/*
-.button1::before,
-.button1::after {
-  position: absolute;
-  z-index: -1;
-  display: block;
-  content: '';
-}
-*/
+
 
 .button1,
 .button1::before,
@@ -149,7 +137,7 @@ h4 {
   text-decoration: none;
   /* visibility:hidden; */
   }
-
+  
 .fl_tw.iconcolor{
   border-radius: 6px;
   position: relative;
