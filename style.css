@@ -113,10 +113,10 @@ h4 {
 }
 
 .statuslump{
-	font-size: 0.7em;
+	font-size: 0.8em;
     width: 52px;
     height: 26px;
-    line-height: 30px; /*heightと同じ値にするとテキストが上下中央に配置 */
+    line-height: 26px; /*heightと同じ値にするとテキストが上下中央に配置 */
  	position: relative;
     display: inline-block;
     padding: 0.25em 0.5em;
@@ -125,7 +125,7 @@ h4 {
     background: #FFF;/*色*/
     border: solid 1px #666;  
     border-radius: 15px / 15px;
-    box-shadow: 0 0 15px 10px rgba(0,0,0,.5) inset; 
+    box-shadow: 0 0 15px rgba(0,0,0,.6) inset; 
     
     /* text-shadow: 0 1px 0 rgba(0,0,0,0.2); */
     visibility:hidden;
