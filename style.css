@@ -126,8 +126,8 @@ h4 {
   text-align: center; 
   
   position: relative;
-  /* background-color: #fff; */
-  /*  border-radius: 8px;  */
+  background-color: #fff; 
+  border-radius: 8px;
   color: #fff;
   line-height: 28px;
   box-shadow: none;
@@ -135,22 +135,21 @@ h4 {
   /* border:1px solid #333;  */
   
   display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-      background: #668ad8;/*É{É^ÉìêF*/ 
+  /*  padding: 0.5em 1em; */
+  text-decoration: none;
 
-    border-bottom: solid 4px #627295;
-    border-radius: 3px;
+  /*border-bottom: solid 4px #627295; */
+ 
   
 }
 .button2:active {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 10px;
-  right: 10px;
-  z-index: -1;
+  /* left: 5px;  */
+  /*  right: 5px;  */
+  \* z-index: -1;  */
   content: '';
   box-shadow: 0 0 20px rgba(0,0,0,.5);
-  border-radius: 100px / 20px;
+  /*border-radius: 100px / 20px;  */
 }
