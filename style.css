@@ -83,6 +83,7 @@ h4 {
     
 	outline: none;  
 	box-shadow: 0 2px 0 #777799;
+	
 }
 .button1:hover {
   background-color: #666666;
@@ -126,6 +127,7 @@ h4 {
     /* box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); */
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     /* text-shadow: 0 1px 0 rgba(0,0,0,0.2); */
+    visibility:hidden;
 }
 
 
