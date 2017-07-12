@@ -78,7 +78,7 @@ function changeViewFromSentMode(sent){
              var output = m.format('M月D日(ddd)  HH:mm:ss');
              document.getElementById("time9").innerHTML = output.toString();
         }
-        /*
+        
     	// Room 9 --------------------------------------------------------------
     	if(sent.value.Room9=='2'){
     	     //document.room9.src = img[1];
@@ -101,8 +101,8 @@ function changeViewFromSentMode(sent){
              document.getElementById("time9").innerHTML = output.toString();
         }
         
-        */
-	    // milkcocoa.disconnect();
+        console.log("ここに来た");
+	     milkcocoa.disconnect();
 }
 //---------------------------------------------------------
 function reconnect(){
