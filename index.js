@@ -102,7 +102,7 @@ function changeViewFromSentMode(sent){
         }
         
         */
-	    milkcocoa.disconnect();
+	    // milkcocoa.disconnect();
 }
 //---------------------------------------------------------
 function reconnect(){
