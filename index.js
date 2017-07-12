@@ -82,7 +82,7 @@ function changeViewFromSentMode(sent){
     	// Room 9 --------------------------------------------------------------
     	if(sent.value.Room9=='2'){
     	     //document.room9.src = img[1];
-    	     document.getElementById(""joutai9").innerHTML = "使用中";
+    	     document.getElementById("joutai9").innerHTML = "使用中";
     	     document.getElementById("color9").style.backgroundColor = '#bb2222';
     	     document.getElementById("joutai9").style.visibility="visible";
     	     document.getElementById("moji9").style.visibility="visible";
