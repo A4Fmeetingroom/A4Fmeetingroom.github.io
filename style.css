@@ -71,45 +71,22 @@ h4 {
 }
 
 .button1 {
-  font-size: 0.9em;
-  display: inline-block;
-  text-decoration: none;
-  background: #87befd;
-  color: #FFF;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  overflow: hidden;
-  transition: .4s;
-border-bottom: solid 0px;
-box-shadow: 0px;
-
-/*
-	position: relative;
-	font-size: 1.05em;
-    width: 130px;
-	height: 35px;
-	line-height: 30px;
-
-	text-align: center;
+	font-size: 0.9em;
+	display: inline-block;
 	text-decoration: none;
-  
-    display: inline-block;
-    
-    
-    background: #668a55;
-    color: #FFF;
-    
-    border-bottom: solid 4px #627295;
-    border-radius: 10px;
-    
-	outline: none;  
-	box-shadow: 0 2px 0 #777799;
-	*/
-	
+	background: #87befd;
+	color: #FFF;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	transition: .4s;
+	border-bottom: solid 0px;
+	box-shadow: 0px;
+
 }
 .button1:hover {
 	background: #668ad8;
