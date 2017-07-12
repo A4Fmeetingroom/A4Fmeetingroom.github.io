@@ -67,33 +67,33 @@ function changeViewFromSentMode(sent){
              document.getElementById("time7").innerHTML = output.toString();
         }
         // Room 8 --------------------------------------------------------------    	
-    	if(sent.value.Room9=='2'){
-    		document.room9.src = img[1];
+    	if(sent.value.Room8=='2'){
+    		document.room8.src = img[1];
         }
-        if(sent.value.Room9=='1'){
-        	document.room9.src = img[0];
+        if(sent.value.Room8=='1'){
+        	document.room8.src = img[0];
         }
-        if(sent.value.Room9 >'0'){
+        if(sent.value.Room8 >'0'){
         	 var m = new moment(); //現在の時刻が入る
              var output = m.format('M月D日(ddd)  HH:mm:ss');
-             document.getElementById("time9").innerHTML = output.toString();
+             document.getElementById("time8").innerHTML = output.toString();
         }
         
     	// Room 9 --------------------------------------------------------------
     	if(sent.value.Room9=='2'){
     	     //document.room9.src = img[1];
     	     document.getElementById("joutai9").innerHTML = "使用中";
-    	     document.getElementById("joutai9").style.backgroundColor = '#bb2222';
+    	     document.getElementById("signal9").style.backgroundColor = '#bb2222';
     	     //document.getElementById("joutai9").style.visibility="visible";
     	     //document.getElementById("moji9").style.visibility="visible";
-             //document.getElementById("color9").style.visibility="visible";
+             document.getElementById("signal9").style.visibility="visible";
         }
         if(sent.value.Room9=='1'){
              //document.room9.src = img[0];
              document.getElementById("joutai9").innerHTML = "空室";
-             document.getElementById("joutai9").style.backgroundColor = '#22bb22';
+             document.getElementById("signal9").style.backgroundColor = '#22bb22';
              //document.getElementById("joutai9").style.visibility="visible";
-             //document.getElementById("color9").style.visibility="visible";
+             document.getElementById("signal9").style.visibility="visible";
         }
         if(sent.value.Room9 >'0'){
         	 var m = new moment(); //現在の時刻が入る
