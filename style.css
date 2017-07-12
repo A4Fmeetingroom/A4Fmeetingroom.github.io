@@ -114,8 +114,8 @@ h4 {
 
 .statuslump{
 	font-size: 0.9em;
-    width: 60px;
-    height: 30px;
+    width: 52px;
+    height: 26px;
     line-height: 30px; /*heightと同じ値にするとテキストが上下中央に配置 */
  	position: relative;
     display: inline-block;
