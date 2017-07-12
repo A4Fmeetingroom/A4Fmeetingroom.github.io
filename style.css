@@ -91,7 +91,7 @@ h4 {
     font-size: 0.95em;
     width: 90px;
     height: 39px;
-    line-height: 39px;
+    /* line-height: 39px; */
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
