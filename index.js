@@ -68,16 +68,17 @@ function changeViewFromSentMode(sent){
         }
         // Room 8 --------------------------------------------------------------    	
     	if(sent.value.Room9=='2'){
-    		document.room8.src = img[1];
+    		document.room9.src = img[1];
         }
         if(sent.value.Room9=='1'){
-        	document.room8.src = img[0];
+        	document.room9.src = img[0];
         }
         if(sent.value.Room9 >'0'){
         	 var m = new moment(); //現在の時刻が入る
              var output = m.format('M月D日(ddd)  HH:mm:ss');
-             document.getElementById("time8").innerHTML = output.toString();
+             document.getElementById("time9").innerHTML = output.toString();
         }
+        /*
     	// Room 9 --------------------------------------------------------------
     	if(sent.value.Room9=='2'){
     	     //document.room9.src = img[1];
@@ -98,7 +99,9 @@ function changeViewFromSentMode(sent){
         	 var m = new moment(); //現在の時刻が入る
              var output = m.format('M月D日(ddd)  HH:mm:ss');
              document.getElementById("time9").innerHTML = output.toString();
-        }        
+        }
+        
+        */
 	    milkcocoa.disconnect();
 }
 //---------------------------------------------------------
