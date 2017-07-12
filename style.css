@@ -127,7 +127,7 @@ h4 {
     visibility:hidden;
 }
 
-
+/*
 .fl_tw {
   text-decoration: none;
   display: inline-block;
@@ -135,7 +135,7 @@ h4 {
   color: #1da1f3;
   font-size: 15px;
   text-decoration: none;
-  /* visibility:hidden; */
+  /* visibility:hidden; 
   }
   
 .fl_tw.iconcolor{
@@ -149,5 +149,6 @@ h4 {
   vertical-align: middle;
   color: #FFF;
   background: #1da1f3;
-  /* visibility:hidden; */
+  /* visibility:hidden; 
 }
+*/
