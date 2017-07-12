@@ -120,29 +120,37 @@ h4 {
 
 .button2{
   font-size: 1.0em;
-  display: inline-block;
+  
   width: 130px;
   height: 28px;
   text-align: center; 
   
   position: relative;
-  background-color: #fff;
+  /* background-color: #fff; */
   /*  border-radius: 8px;  */
   color: #fff;
   line-height: 28px;
   box-shadow: none;
   /* box-shadow:0px 0px 10px; */
   /* border:1px solid #333;  */
-}
-.button2::before,
-.button2::after {
-  /*  position: absolute;  */
-   z-index: 0;
-  /*  display: block;  */
-  content: '';
-  box-shadow: none;
   
-  -ms-transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);/*â∫Ç…ìÆÇ≠*/
+  display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+      background: #668ad8;/*É{É^ÉìêF*/ 
+
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  
+}
+.button2::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  z-index: -1;
+  content: '';
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  border-radius: 100px / 20px;
 }
