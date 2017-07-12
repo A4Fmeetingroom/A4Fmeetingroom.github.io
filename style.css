@@ -126,8 +126,8 @@ h4 {
     /* visibility:hidden; */
 }
 
-/*
-.fl_tw {
+
+.moji{
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -137,6 +137,7 @@ h4 {
   /* visibility:hidden; 
   }
   
+  /*
 .fl_tw.iconcolor{
   border-radius: 6px;
   position: relative;
