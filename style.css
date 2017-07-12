@@ -147,6 +147,7 @@ h4 {
   color: #1da1f3;
   font-size: 15px;
   text-decoration: none;
+  visibility:hidden;
   }
 
 .fl_tw .iconcolor{
@@ -160,8 +161,5 @@ h4 {
   vertical-align: middle;
   color: #FFF;
   background: #1da1f3;
-}
-
-.fl_tw .twicon .fa {
-  line-height: 30px;
+  visibility:hidden;
 }
