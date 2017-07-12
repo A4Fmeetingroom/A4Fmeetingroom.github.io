@@ -67,13 +67,13 @@ function changeViewFromSentMode(sent){
              document.getElementById("time7").innerHTML = output.toString();
         }
         // Room 8 --------------------------------------------------------------    	
-    	if(sent.value.Room8=='2'){
+    	if(sent.value.Room9=='2'){
     		document.room8.src = img[1];
         }
-        if(sent.value.Room8=='1'){
+        if(sent.value.Room9=='1'){
         	document.room8.src = img[0];
         }
-        if(sent.value.Room8 >'0'){
+        if(sent.value.Room9 >'0'){
         	 var m = new moment(); //現在の時刻が入る
              var output = m.format('M月D日(ddd)  HH:mm:ss');
              document.getElementById("time8").innerHTML = output.toString();
